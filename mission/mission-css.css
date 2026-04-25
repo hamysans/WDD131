@@ -1,0 +1,39 @@
+img {
+   width: 25%; 
+   display: block;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+
+h1+p {
+    text-align: center;
+    color: #035f9c;
+    margin-bottom: -10px;
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+hr+p {
+    margin-top: 30px;
+}
+
+p+p {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    margin-top: 22px;
+}
+
+#content {
+    margin: 0 20%;
+}
