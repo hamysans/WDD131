@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: Roboto, sans-serif;
 }
 header,
@@ -22,12 +24,10 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
-nav {
-    text-align: right;
-}
 nav a {
     padding: 20px;
     color: black;
+    display: none;
 }
 nav a:hover {
     text-decoration: none;
@@ -43,56 +43,52 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
-    transition: 0.3s ease;
 }
 footer {
     text-align: center;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 700px) and (max-width: 999px){
+@media screen and (min-width: 700px) {
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }  
+    .menu-btn {
+        display: none;
     }
     nav a {
         display: inline;
     }
-    .menu-btn {
-        display: none;
+    nav {
+        text-align: right;
     }
 }
+
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .menu-btn {
-        display: none;
-    }
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
+.hide a {
+    display: inline-block;
 }
 
-.seperator {
-    height: 1px;
-    background-color: black;
+.change div {
+    background-color: pink;
+}
+
+.menu-btn div {
+    transition: transform 100s ease-in-out
+                , opacity 100s ease-in-out, 
+                background-color 100s linear;
+                
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 9px) rotate(-45deg);
 }
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
-
-.hide {
-    display: none;
+  transform: translate(0, -9px) rotate(45deg);
 }
