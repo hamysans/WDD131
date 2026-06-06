@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket</title>
+    <link rel="stylesheet" href="event.css"></style>
+    <link rel="icon" href="images.ico">
+    <script src="event.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <h1>Event Ticket</h1>
+        <form id="eventForm">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required />
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+                <label for="personType">Type</label>
+                <select
+                id="personType"
+                name="personType"
+                aria-controls="additionalInfo"
+                required
+                >
+                <option value="">Choose one</option>
+                <option value="student">Student</option>
+                <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" name="eventDate" type="date" required />
+            </div>
+
+            <div id="additionalInfo" class="field full" hidden>
+                <label id="infoText" for="notes">T</label>
+                <input id="notes" name="notes" type="text" />
+            </div>
+
+            <button class="full" type="submit">Create Ticket</button>
+        </form>
+
+        <section id="output" aria-live="polite"></section>
+    </div>
+</body>
+</html>

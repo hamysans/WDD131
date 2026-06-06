@@ -1,4 +1,3 @@
-
 const form = document.querySelector("#fsyForm");
 const travelRange = document.querySelector("#travelRange");
 const notesContainer = document.querySelector("#notesContainer");
