@@ -33,7 +33,7 @@ function renderSections(character) {
 renderSections(character.cardInfo);
 
 function sectionTemplate(cardInfo) {
-    return `<img src="snortleblat.webp" class="image">
+    return `<img src="snortleblat.webp" class="image" alt="Humanoid aligator in a swamp">
     <h1 class="name">${cardInfo.name}</h1>
     <div class="stats">
         <p>Class: ${cardInfo.class}</p>
