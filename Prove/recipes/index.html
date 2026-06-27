@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="recipes.css">
+    <script defer src="recipes.js"></script>
     
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -33,29 +34,31 @@
     </div>
     
     <form class="searchBar">
-        <input type="text" placeholder="Find a recipe"></label>
-        <button><img src="search.svg" class="search"></button>
+        <input type="text" placeholder="Find a recipe" id="textInput"></label>
+        <button id="search"><img src="search.svg"></button>
     </form>
     <hr>
-    <div class="recipeCard">
-        <!-- <span
-        class="rating"
-        role="img"
-        aria-label="Rating: 4 out of 5 stars"
-        > -->
-        <img src="apple-crisp.jpg" alt="image of Apple Crisp with ice cream on top">
-        <div>
-            <button>dessert</button>
-            <h2>Apple Crisp</h2>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-            <!-- </span> -->
+    <div id="recipes">
+        <div class="recipeCard">
+            <!-- <span
+            class="rating"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars"
+            > -->
+            <img src="apple-crisp.jpg" alt="image of Apple Crisp with ice cream on top">
+            <div>
+                <button>dessert</button>
+                <h2>Apple Crisp</h2>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                <!-- </span> -->
 
-            <p class="hidden">This apple crisp recipe is a simple yet delicous fall 
-            dessert that's great served warm with vanilla ice cream</p>
+                <p class="hidden">This apple crisp recipe is a simple yet delicous fall 
+                dessert that's great served warm with vanilla ice cream</p>
+            </div>
         </div>
     </div>
                 
