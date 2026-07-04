@@ -4,22 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON D&D</title>
+    <link rel="stylesheet" href="JSON.css">
 </head>
 <body>
     <nav>
-
+        <img src="JSOND&DLogo.png" class="logo" href="index.html" alt="logo of dice with a quill">
+        <a href="premadecha.html" class="navText">Premade Characters</a>
     </nav>
     <div id="hero-box">
-
+        <img src="HeroImageJSOND&D.png" class="hero-img" alt="hero image of words truning to code">
+        <h1>JSON D&D Character Creator</h1>
+        <h2>Create a character sheet and download it as a JSON file. This is to be used in tandem with a python program that will make the rolls for you.</h2>
     </div>
-    <div id="character-form">
-
+    <div id="character-form-container">
+        <div id="character-form">
+            <div class="form-data-piece">
+                <label for="characterName">Character Name</label>
+                <input id="characterName" name="characterName" type="text" required />
+            </div>
+            <div class="form-data-piece">
+                <label for="class">Class</label>
+                <select name="class" id="class">
+                    <option value="fighter">Fighter</option>
+                    <option value="monk">Monk</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="wizard">Wizard</option>
+                </select>
+            </div>
+            <div class="form-data-piece">
+                <label for="race">Race</label>
+                <select name="race" id="race">
+                    <option value="halfling">Halfling</option>
+                    <option value="human">Human</option>
+                    <option value="elf">Elf</option>
+                    <option value="tiefling">Tiefling</option>
+                </select>
+            </div>
+            <div class="form-data-piece">
+                <label for="level">Level</label>
+                <select name="level" id="level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div class="form-data-piece">
+                <label for="background">Background</label>
+                <select name="background" id="background">
+                    <option value="acolyte">Acolyte</option>
+                    <option value="criminal">Criminal</option>
+                    <option value="hauntedOne">Haunted One</option>
+                    <option value="soldier">Soldier</option>
+                </select>
+            </div>
+            <div id="stats-container">
+                <div class="stat">
+                    <label for="strength">Strength</label>
+                    <input id="strength" name="strength" type="number" required />
+                </div>
+                <div class="stat">
+                    <label for="dexterity">Dexterity</label>
+                    <input id="dexterity" name="dexterity" type="number" required />
+                </div>
+                <div class="stat">
+                    <label for="constitution">Constitution</label>
+                    <input id="constitution" name="constitution" type="number" required />
+                </div>
+                <div class="stat">
+                    <label for="intelligence">Intelligence</label>
+                    <input id="intelligence" name="intelligence" type="number" required />
+                </div>
+                <div class="stat">
+                    <label for="wisdom">Wisdom</label>
+                    <input id="wisdom" name="wisdom" type="number" required />
+                </div>
+                <div class="stat">
+                    <label for="charisma">Charisma</label>
+                    <input id="charisma" name="charisma" type="number" required />
+                </div>
+            </div>
+        </div>
+        <button class="downloadButton">Download</button>
     </div>
     <div id="character-search-box">
 
     </div>
     <footer>
-        
+        <img src="JSOND&DLogo.png" class="logo">
     </footer>
 </body>
 </html>

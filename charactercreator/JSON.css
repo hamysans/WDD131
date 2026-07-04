@@ -1,0 +1,14 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+}
+
+.logo {
+    width: 130px;
+    justify-content: center;
+}
+
+.navText {
+    margin: auto;
+}
