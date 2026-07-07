@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON D&D</title>
     <link rel="stylesheet" href="JSON.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -12,7 +15,7 @@
         <a href="premadecha.html" class="navText">Premade Characters</a>
     </nav>
     <div id="hero-box">
-        <img src="HeroImageJSOND&D.png" class="hero-img" alt="hero image of words truning to code">
+        <img src="HeroImageJSOND&D.png" id="hero-img" alt="hero image of words truning to code">
         <h1>JSON D&D Character Creator</h1>
         <h2>Create a character sheet and download it as a JSON file. This is to be used in tandem with a python program that will make the rolls for you.</h2>
     </div>
@@ -104,7 +107,13 @@
         <button class="downloadButton">Download</button>
     </div>
     <div id="character-search-box">
+        <div class="search-bar">
+            <input class="search-box">
+            <button class="search-button">Search</button>
+        </div>
+        <div id="premade-character-box">
 
+        </div>
     </div>
     <footer>
         <img src="JSOND&DLogo.png" class="logo">
