@@ -32,14 +32,22 @@ input, select {
 
 .logo {
     height: 130px;
+}
+
+.logo_link {
+    grid-column: 2/3;
     justify-content: center;
     margin: -15px auto;
-    grid-column: 2/3;
 }
 
 .navText {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    color: #798478;
+    font-size: 18px;
+    height: 100%;
 }
 
 .search-box {
@@ -100,4 +108,10 @@ input, select {
 
 #character-search-box {
     background-color: #4D6A6D;
+    padding: 10px 0px;
+}
+
+.navText:hover {
+    background-color: #798478;
+    color: #EAE0CC;
 }
