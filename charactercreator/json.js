@@ -149,8 +149,6 @@ function update() {
 }
 
 function download() {
-
-    console.log("Click")
     let cname = document.getElementById('characterName').value
     let cclass = document.getElementById('class').value
     let clevel = Number(document.getElementById('level').value)
