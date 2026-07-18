@@ -8,15 +8,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <script src="json.js" defer></script>
 </head>
 <body>
     <nav>
-        <img src="JSOND&DLogo.png" class="logo" href="index.html">
+        <a href="index.html" class="logo_link">
+            <img src="JSOND&DLogo.png" class="logo" href="index.html" alt="logo of dice with a quill">
+        </a>
         <a href="index.html" class="navText">Home</a>
     </nav>
-
+        <div id="character-search-box">
+            <h1>Premade Characters</h1>
+            <div class="search-bar">
+                <input id="search-box" type="search" aria-label="search characters">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="premade-character-box">
+                <div class="character">
+                    <p>Name: Kusan</p>
+                    <p>Class/Level: Cleric 5</p>
+                    <p>Race: Kalashtar</p>
+                    <p>Background: Acolyte</p>
+                </div>
+                <div class="character">
+                    <p>Name: Kanade</p>
+                    <p>Class/Level: Bard 5</p>
+                    <p>Race: Aasimar</p>
+                    <p>Background: Musician</p>
+                </div>
+                <div class="character">
+                    <p>Name: Nor</p>
+                    <p>Class/Level: Artifice 14</p>
+                    <p>Race: Goliath</p>
+                    <p>Background: Crafter</p>
+                </div>
+            </div>
+        </div>
     <footer>
-        <img src="JSOND&DLogo.png" class="logo">
+        <a class="logo_link">
+            <img src="JSOND&DLogo.png" class="logo" alt="logo of a dice and quill">
+        </a>
     </footer>
 </body>
 </html>

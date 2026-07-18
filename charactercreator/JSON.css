@@ -1,8 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #A0A083;
+    background-color: #98987b;
     color: #EAE0CC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
@@ -22,6 +25,10 @@ nav, footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
+}
+
+footer {
+    padding: 18px;
 }
 
 input, select {
@@ -64,14 +71,6 @@ input, select {
     }
 }
 
-.downloadButton {
-    background-color: #798478;
-    color: #EAE0CC;
-    margin: 10px 45%;
-    width: 10%;
-    min-width: 80px;
-}
-
 .stat {
     margin: 10px auto;
     display: grid;
@@ -89,6 +88,14 @@ input, select {
     text-align: center;
 }
 
+.character {
+    background-color: #798478;
+    padding: 10px;
+    border: 2px solid #EAE0CC;
+    border-radius: 10px;
+    text-align: left;
+}
+
 #character-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,6 +109,10 @@ input, select {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+#hero-box {
+    text-align: center;
+}
+
 #hero-img {
     width: 100%;
 }
@@ -109,9 +120,30 @@ input, select {
 #character-search-box {
     background-color: #4D6A6D;
     padding: 10px 0px;
+    text-align: center;
+}
+
+#premade-character-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+    gap: 15px;
+}
+
+#downloadButton {
+    background-color: #798478;
+    color: #EAE0CC;
+    margin: 10px 45%;
+    width: 10%;
+    min-width: 80px;
 }
 
 .navText:hover {
     background-color: #798478;
     color: #EAE0CC;
+}
+
+[hidden] {
+    display: none !important;
 }
